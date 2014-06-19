@@ -2,7 +2,7 @@
 ## that are used to create a special object to store a 
 ## matrix and caches its inverse.
 
-## This makeCacheMatrix function takes the user input matrix x
+## This makeCacheMatrix function takes the user input matrix 'x'
 ## and creates a special object to store the matrix.  It also
 ## defines 4 functions: (1) set function to set the value of 
 ## matrix, (2) get function to get the value of the matrix,
@@ -30,7 +30,7 @@ makeCacheMatrix <- function(x = matrix()) {
 ## If so, it returns the inverse matrix of 'x' from the cache. If not, 
 ## it gets the value of matrix 'x' via get function, computes the inverse 
 ## matrix of 'x', cache the value of the inverse matrix via setinversematrix 
-## function, and return the computed inverse matrix of 'x'. 
+## function, and returns the computed inverse matrix of 'x'. 
 
 cacheSolve <- function(x, ...) {
   inversematrix <- x$getinversematrix()
