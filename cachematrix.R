@@ -24,9 +24,13 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## This cacheSolve function takes the special matrix object created 
-## by the above makeCacheMatrix function and returns a matrix that 
-## is the inverse of 'x'
+## This cacheSolve function takes the special matrix object created by 
+## the makeCacheMatrix function above, gets its inverse matrix via 
+## getinversematrix function, and checks if the inverse matrix exists. 
+## If so, it returns the inverse matrix of 'x' from the cache. If not, 
+## it gets the value of matrix 'x' via get function, computes the inverse 
+## matrix of 'x', cache the value of the inverse matrix via setinversematrix 
+## function, and return the computed inverse matrix of 'x'. 
 
 cacheSolve <- function(x, ...) {
   inversematrix <- x$getinversematrix()
